@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Hair Artisans of Atlanta | Hair salon in Marietta, GA</title>
+<meta name="description" content="Concept preview of a website for Hair Artisans of Atlanta, a hair salon in Marietta, GA.">
+<style>
+:root {
+  --cream: #f8f2ea;
+  --sand: #eadfd1;
+  --ink: #2b1d22;
+  --plum: #4a2a3a;
+  --copper: #8a4326;
+  --copper-dark: #6e3319;
+  --rose: #d9a68f;
+  --serif: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, "Times New Roman", serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--cream);
+}
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--copper); outline-offset: 3px; }
+
+.preview-bar {
+  background: #1d1217;
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  text-align: center;
+  padding: 0.65rem 1rem;
+}
+
+.wrap { width: min(100% - 2.5rem, 70rem); margin-inline: auto; }
+
+header.site {
+  padding-block: 1.25rem;
+}
+.brand {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  color: var(--plum);
+  font-weight: 700;
+}
+.nav-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.nav-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--plum);
+}
+
+.hero {
+  padding-block: 2.5rem 4rem;
+  display: grid;
+  gap: 2.5rem;
+}
+.eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--copper);
+}
+h1 {
+  margin: 0 0 1.25rem;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(2.5rem, 9vw, 4.75rem);
+  line-height: 1.05;
+  color: var(--plum);
+}
+.lede { margin: 0 0 2rem; max-width: 34rem; font-size: 1.2rem; }
+.btn {
+  display: inline-block;
+  padding: 0.95rem 1.6rem;
+  background: var(--copper);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: background 0.2s;
+}
+.btn:hover { background: var(--copper-dark); }
+.cta-note { margin: 0.9rem 0 0; font-size: 0.95rem; }
+
+.art {
+  position: relative;
+  min-height: 18rem;
+  border-radius: 12rem 12rem 1.5rem 1.5rem;
+  background: linear-gradient(160deg, var(--plum) 0%, #6b3d52 60%, var(--copper) 100%);
+  overflow: hidden;
+}
+.art::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  aspect-ratio: 1;
+  right: -15%;
+  bottom: -20%;
+  border-radius: 50%;
+  background: var(--rose);
+  opacity: 0.55;
+}
+.art::after {
+  content: "";
+  position: absolute;
+  width: 38%;
+  aspect-ratio: 1;
+  left: 12%;
+  top: 16%;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+}
+.art span {
+  position: absolute;
+  left: 1.5rem;
+  bottom: 1.25rem;
+  font-family: var(--serif);
+  font-size: 3.5rem;
+  line-height: 1;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+
+section { padding-block: 4rem; }
+h2 {
+  margin: 0 0 1rem;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.9rem, 5vw, 2.75rem);
+  line-height: 1.15;
+  color: var(--plum);
+}
+.about { background: var(--sand); }
+.about .grid { display: grid; gap: 2rem; }
+.about p { margin: 0 0 1rem; max-width: 36rem; }
+.facts { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+.facts li {
+  background: var(--cream);
+  border-left: 5px solid var(--copper);
+  padding: 1.1rem 1.3rem;
+  border-radius: 0.25rem;
+}
+.facts strong {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  color: var(--plum);
+}
+
+.contact { text-align: left; }
+.contact .box {
+  background: var(--plum);
+  color: #fff;
+  border-radius: 1.5rem;
+  padding: 2.5rem 1.5rem;
+}
+.contact h2 { color: #fff; }
+.contact p { margin: 0 0 1.5rem; max-width: 32rem; }
+.mail {
+  display: inline-block;
+  font-family: var(--serif);
+  font-size: clamp(1.25rem, 5vw, 2rem);
+  color: #fff;
+  overflow-wrap: anywhere;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+}
+
+footer {
+  padding-block: 2rem 2.5rem;
+  font-size: 0.95rem;
+}
+footer .row { display: grid; gap: 0.5rem; }
+footer p { margin: 0; }
+
+@media (min-width: 48rem) {
+  .preview-bar { font-size: 0.95rem; }
+  .hero { grid-template-columns: 1.15fr 0.85fr; align-items: center; padding-block: 4rem 6rem; gap: 4rem; }
+  .art { min-height: 30rem; }
+  .about .grid { grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+  .contact .box { padding: 4rem; }
+  footer .row { grid-template-columns: 1fr auto; }
+}
+@media (min-width: 90rem) {
+  body { font-size: 1.125rem; }
+  .wrap { width: min(100% - 6rem, 76rem); }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn { transition: none; }
+}
+</style>
+</head>
+<body>
+
+<div class="preview-bar" role="note">Concept preview made by Purcell Ventures for Hair Artisans of Atlanta. Not the official site.</div>
+
+<header class="site">
+  <div class="wrap nav-row">
+    <a class="brand" href="#top">Hair Artisans of Atlanta</a>
+    <a class="nav-link" href="#contact">Contact</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div>
+      <p class="eyebrow">Hair salon in Marietta, GA</p>
+      <h1>Hair care by people who love the craft.</h1>
+      <p class="lede">Hair Artisans of Atlanta is a hair salon in Marietta, Georgia. Send us a note to ask a question or plan a visit.</p>
+      <a class="btn" href="mailto:salon@hairartisans.com">Email the salon</a>
+      <p class="cta-note">salon@hairartisans.com</p>
+    </div>
+    <div class="art" aria-hidden="true"><span>HA</span></div>
+  </div>
+
+  <section class="about" id="about">
+    <div class="wrap grid">
+      <div>
+        <h2>A neighborhood salon in Marietta</h2>
+        <p>Your hair is personal. A good salon listens first, then gets to work.</p>
+        <p>Reach out by email to ask about appointments, services and what to expect on your first visit.</p>
+      </div>
+      <ul class="facts">
+        <li><strong>Who we are</strong>A hair salon</li>
+        <li><strong>Where we are</strong>Marietta, GA</li>
+        <li><strong>How to reach us</strong>salon@hairartisans.com</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="box">
+        <h2>Say hello</h2>
+        <p>Email is the best way to reach the salon right now. Tell us what you have in mind and we will write back.</p>
+        <a class="mail" href="mailto:salon@hairartisans.com">salon@hairartisans.com</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap row">
+    <p>Hair Artisans of Atlanta, Marietta, GA</p>
+    <p>Concept preview by Purcell Ventures</p>
+  </div>
+</footer>
+
+</body>
+</html>
