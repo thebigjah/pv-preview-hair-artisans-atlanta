@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Hair Artisans of Atlanta | Salon and Spa in Kennesaw, GA</title>
+<meta name="description" content="Full service salon and spa in Kennesaw, GA with local artisans. Hair, makeup, skin care, bridal and editorial styling. By appointment.">
+<style>
+:root {
+  --ink: #2a1d24;
+  --plum: #3d2430;
+  --cream: #f8f2ea;
+  --sand: #ede2d3;
+  --brass: #dcbc8b;
+  --rose: #8a3b52;
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--cream);
+}
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--rose); outline-offset: 3px; }
+.wrap { width: min(100% - 2.5rem, 68rem); margin-inline: auto; }
+
+.preview-bar {
+  background: #000;
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  text-align: center;
+  padding: 0.6rem 1rem;
+}
+
+header.site {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--sand);
+}
+header.site .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+}
+.brand {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+}
+.brand small {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--rose);
+}
+nav ul {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.95rem;
+}
+nav a { text-decoration: none; padding: 0.25rem 0; }
+nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+.hero {
+  background: var(--plum);
+  color: var(--cream);
+  overflow: hidden;
+  position: relative;
+}
+.hero .wrap {
+  display: grid;
+  gap: 2.5rem;
+  padding: 3.5rem 0 4rem;
+}
+.eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; margin: 0; }
+h1 { font-size: clamp(2.25rem, 9vw, 4rem); }
+.hero p.lead { font-size: 1.15rem; max-width: 34rem; margin: 1.25rem 0 0; }
+.cta { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.5rem;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid var(--brass);
+}
+.btn.primary { background: var(--brass); color: var(--ink); }
+.btn.primary:hover { background: #ecd1a8; }
+.btn.ghost { color: var(--cream); }
+.btn.ghost:hover { background: rgba(220, 188, 139, 0.15); }
+
+.art { display: none; position: relative; min-height: 20rem; }
+.art span { position: absolute; display: block; }
+.art .a1 { width: 15rem; height: 20rem; border: 2px solid var(--brass); border-radius: 50% 50% 0 0; right: 4rem; top: 0; }
+.art .a2 { width: 11rem; height: 15rem; background: var(--rose); border-radius: 50% 50% 0 0; right: 1rem; bottom: 0; opacity: 0.85; }
+.art .a3 { width: 5rem; height: 5rem; background: var(--brass); border-radius: 50%; right: 15rem; bottom: 1rem; }
+
+section { padding: 4rem 0; }
+.kicker {
+  margin: 0 0 0.75rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--rose);
+}
+h2 { font-size: clamp(1.75rem, 6vw, 2.5rem); max-width: 36rem; }
+
+.philosophy {
+  background: var(--sand);
+  padding: 3.5rem 0;
+}
+.philosophy blockquote {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.4rem, 5vw, 2rem);
+  line-height: 1.35;
+  max-width: 42rem;
+}
+.philosophy p { margin: 1rem 0 0; font-size: 0.9rem; color: #5a4650; }
+
+.services ul {
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--ink);
+}
+.services li {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--sand);
+}
+.brands { margin: 2rem 0 0; max-width: 36rem; }
+
+.events { background: var(--ink); color: var(--cream); }
+.events .kicker { color: var(--brass); }
+.events .grid { display: grid; gap: 2.5rem; }
+.events p { margin: 1rem 0 0; max-width: 32rem; }
+
+.stations .grid { display: grid; gap: 1.5rem; }
+.stations p { margin: 1rem 0 0; max-width: 34rem; }
+.roles { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
+.roles li {
+  background: #fff;
+  border-left: 4px solid var(--rose);
+  padding: 1rem 1.25rem;
+  font-family: var(--serif);
+  font-size: 1.15rem;
+}
+
+.visit { background: var(--sand); }
+.visit .grid { display: grid; gap: 2rem; margin-top: 2rem; }
+dl { margin: 0; }
+dt {
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--rose);
+  margin-top: 1.25rem;
+}
+dt:first-child { margin-top: 0; }
+dd { margin: 0.2rem 0 0; font-size: 1.15rem; }
+dd a { font-weight: 600; }
+.visit .cta { margin-top: 0; align-content: start; }
+.visit .btn.primary { border-color: var(--ink); background: var(--ink); color: var(--cream); }
+.visit .btn.primary:hover { background: var(--plum); }
+.visit .btn.ghost { color: var(--ink); border-color: var(--ink); }
+.visit .btn.ghost:hover { background: rgba(42, 29, 36, 0.08); }
+
+footer {
+  background: var(--ink);
+  color: #e6dccf;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}
+footer .wrap { display: grid; gap: 0.5rem; }
+footer p { margin: 0; }
+footer a { color: var(--brass); }
+
+@media (min-width: 48rem) {
+  .hero .wrap { grid-template-columns: 1.3fr 1fr; align-items: center; padding: 6rem 0; }
+  .art { display: block; }
+  .services ul { grid-template-columns: 1fr 1fr; column-gap: 3rem; }
+  .events .grid { grid-template-columns: 1fr 1fr; }
+  .stations .grid { grid-template-columns: 1.2fr 1fr; align-items: start; gap: 4rem; }
+  .visit .grid { grid-template-columns: 1fr 1fr; gap: 4rem; }
+  section { padding: 6rem 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+</style>
+</head>
+<body>
+<div class="preview-bar">Concept preview made by Purcell Ventures for Hair Artisans of Atlanta. Not the official site.</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top">Hair Artisans of Atlanta<small>Kennesaw, GA</small></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#stations">Stations</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Salon and spa in Kennesaw</p>
+        <h1>Hair Artisans of Atlanta</h1>
+        <p class="lead">An exclusive full service salon and spa featuring local artisans. Hair, makeup, skin care and more, by appointment.</p>
+        <div class="cta">
+          <a class="btn primary" href="tel:+17704242873">Call (770) 424-2873</a>
+          <a class="btn ghost" href="#visit">Find us</a>
+        </div>
+      </div>
+      <div class="art" aria-hidden="true">
+        <span class="a1"></span>
+        <span class="a2"></span>
+        <span class="a3"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="philosophy">
+    <div class="wrap">
+      <blockquote>Clients are canvases to be transformed into one-of-a-kind masterpieces.</blockquote>
+      <p>Our philosophy</p>
+    </div>
+  </div>
+
+  <section class="services" id="services">
+    <div class="wrap">
+      <p class="kicker">Services</p>
+      <h2>Everything from a cut to a keratin treatment</h2>
+      <ul>
+        <li>Cut</li>
+        <li>Color</li>
+        <li>Style</li>
+        <li>Special occasion styling</li>
+        <li>Keratin straightening treatment</li>
+        <li>Hair extensions</li>
+        <li>Make-up</li>
+        <li>Skin care</li>
+        <li>Hair removal</li>
+      </ul>
+      <p class="brands">We carry Kevin.Murphy and we are a Session Salon.</p>
+    </div>
+  </section>
+
+  <section class="events">
+    <div class="wrap grid">
+      <div>
+        <p class="kicker">Bridal</p>
+        <h2>Bridal styling and bridal makeup</h2>
+        <p>Plan your wedding day hair and makeup with us. Call to set up an appointment.</p>
+      </div>
+      <div>
+        <p class="kicker">Editorial</p>
+        <h2>Editorial styling and photoshoots</h2>
+        <p>We style for photoshoots as well as for special occasions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="stations" id="stations">
+    <div class="wrap grid">
+      <div>
+        <p class="kicker">Work with us</p>
+        <h2>Semi-private stations for independent artists</h2>
+        <p>Rent a semi-private station and run your own book inside our salon. Call to ask about availability.</p>
+      </div>
+      <ul class="roles">
+        <li>Independent hair designers</li>
+        <li>Licensed massage therapists</li>
+        <li>Freelance makeup artists</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap">
+      <p class="kicker">Visit</p>
+      <h2>543 Roberts Court, Kennesaw</h2>
+      <div class="grid">
+        <dl>
+          <dt>Address</dt>
+          <dd>543 Roberts Court, Unit 100<br>Kennesaw, GA</dd>
+          <dt>Phone</dt>
+          <dd><a href="tel:+17704242873">(770) 424-2873</a></dd>
+          <dt>Appointments</dt>
+          <dd>By appointment</dd>
+          <dt>Payment</dt>
+          <dd>Cash, Visa and Mastercard</dd>
+          <dt>Access</dt>
+          <dd>Wheelchair accessible</dd>
+        </dl>
+        <div class="cta">
+          <a class="btn primary" href="tel:+17704242873">Call to book</a>
+          <a class="btn ghost" href="https://www.openstreetmap.org/node/11660272235">View on map</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Hair Artisans of Atlanta, 543 Roberts Court, Unit 100, Kennesaw, GA</p>
+    <p><a href="tel:+17704242873">(770) 424-2873</a></p>
+  </div>
+</footer>
+</body>
+</html>
